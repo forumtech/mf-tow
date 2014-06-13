@@ -74,8 +74,7 @@ if(_isTowing) then {
 		if (_finished) then {
 			detach _vehicle;
 			detach player;
-			//_vehicle lock false; // Enable players to re-enter the vehicle now it has been detached.
-			_vehicle setVehicleLock "UNLOCKED"; 
+			_vehicle setVehicleLock "UNLOCKED"; // Enable players to re-enter the vehicle now it has been detached.
 						
 			_vehicle setVariable ["MFTowInTow", false, true];
 			_towTruck setVariable ["MFTowIsTowing", false, true];
